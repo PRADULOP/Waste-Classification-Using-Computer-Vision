@@ -23,8 +23,10 @@ Here's what the code does:
 
 1.Import necessary libraries:
 
-   os: used for handling file paths and directories\n
-   cvzone: a library that provides various computer vision functions such as object classification, face detection, etc.\n
+   os: used for handling file paths and directories.
+   
+   cvzone: a library that provides various computer vision functions such as object classification, face detection, etc.
+   
    cv2: the OpenCV library for image processing.
 
 2.Initialize the video capture object 'cap' with the ID of the camera to be used for capturing images.
