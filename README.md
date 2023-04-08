@@ -14,3 +14,45 @@ The main loop of the code starts by capturing an image from the webcam and resiz
 Finally, the code overlays the resized image on the background and displays the output image using the 'imshow' function. The code runs continuously in the loop until the user exits the program using the 'waitKey' function.
 
 This code can be used as a starting point for building a waste classification system using deep learning. However, it would need to be modified and optimized according to the specific use case and environment
+
+
+
+
+
+Here's what the code does:
+
+1.Import necessary libraries:
+
+   os: used for handling file paths and directories
+   cvzone: a library that provides various computer vision functions such as object classification, face detection, etc.
+   cv2: the OpenCV library for image processing.
+
+2.Initialize the video capture object 'cap' with the ID of the camera to be used for capturing images.
+
+3.Load a pre-trained classification model from the specified file path using the 'Classifier' class from CVZone.
+
+4.Load waste images and waste bin images from the specified directories using the 'os' and 'cv2' libraries.
+
+5.Create a dictionary 'classDic' that maps the predicted class ID to the corresponding waste bin ID.
+
+6.In a while loop, read a frame from the video capture object.
+
+7.Resize the captured image to a fixed size.
+
+8.Overlay a background image on the captured image.
+
+9.Use the pre-trained classification model to predict the class of the object in the captured image.
+
+10.If the predicted class is not 0, overlay the corresponding waste image on the background image at a specified position and overlay an arrow image pointing to the waste bin.
+
+11.Use the 'classDic' dictionary to determine the waste bin ID based on the predicted waste class ID.
+
+12.Overlay the corresponding waste bin image on the background image at a specified position.
+
+13.Overlay the resized captured image on the background image at a specified position.
+
+14.Display the resulting image in a window.
+
+15.Wait for a key press event for a specified time.
+
+This code uses the CVZone library's pre-trained model for waste classification and image overlaying functions to create a simple waste classification and disposal application.
