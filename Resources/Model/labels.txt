@@ -1,0 +1,8 @@
+0 Nothing
+1 Paper
+2 Glass
+3 Metal
+4 Electronic Waste
+5 Food Waste
+6 Mining wsate
+7 Plastic
